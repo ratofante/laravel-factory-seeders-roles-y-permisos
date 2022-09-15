@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Permiso extends Model
+{
+    use HasFactory;
+
+    protected $fillable = ['permiso'];
+    public $timestamps = false;
+
+    public function rols() {
+        return $this->belongsToMany(Rol::class);
+    }
+}
