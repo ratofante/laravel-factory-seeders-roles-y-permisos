@@ -37,7 +37,7 @@
                             <div class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                             </div>
                             <div>
-                            <p class="font-semibold text-black"> {{ $user->name }} - {{ $user->rols[0]->id }}</p>
+                            <p class="font-semibold text-black"> {{ $user->name }}</p>
                             <p class="text-xs text-gray-600 capitalize"> {{ $user->rols[0]->rol }} </p>
                             </div>
                         </div>
